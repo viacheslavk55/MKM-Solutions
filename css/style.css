@@ -709,6 +709,15 @@ a:focus {
 .footer_section a {
   color: #fbfcfd;
 }
+.bb{
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.bb:hover{
+  transform: translateY(-0.3rem);
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
