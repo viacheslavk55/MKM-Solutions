@@ -1,3 +1,77 @@
+// Add this script at the end of your HTML file, before the closing </body> tag
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all carousels
+  const carousels = document.querySelectorAll('.carousel');
+  
+  // Initialize each carousel
+  carousels.forEach(function(carousel) {
+    initCarousel(carousel);
+  });
+  
+  function initCarousel(carousel) {
+    let currentSlide = 0;
+    const slides = carousel.querySelectorAll('.slide');
+    const dots = carousel.querySelectorAll('.dot');
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+    const totalSlides = slides.length;
+    
+    // Set up event listeners for this specific carousel
+    prevBtn.addEventListener('click', function() {
+      changeSlide(-1);
+    });
+    
+    nextBtn.addEventListener('click', function() {
+      changeSlide(1);
+    });
+    
+    // Add click events to dots
+    dots.forEach(function(dot, index) {
+      dot.addEventListener('click', function() {
+        goToSlide(index);
+      });
+    });
+    
+    // Change slide function for this carousel
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      updateSlides();
+    }
+    
+    // Go to specific slide
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlides();
+    }
+    
+    // Update the slides display
+    function updateSlides() {
+      // Hide all slides
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+      });
+      
+      // Hide all active dots
+      dots.forEach(dot => {
+        dot.classList.remove('active');
+      });
+      
+      // Show the current slide and dot
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    
+    // Auto-advance slides every 5 seconds for this carousel
+    const interval = setInterval(function() {
+      changeSlide(1);
+    }, 5000);
+    
+    // Clear interval if user leaves the page
+    window.addEventListener('beforeunload', function() {
+      clearInterval(interval);
+    });
+  }
+});
 // Add this script to your JavaScript file or at the end of the body
 document.addEventListener('DOMContentLoaded', function() {
     // Close navbar when clicking a nav item on mobile
