@@ -22,7 +22,7 @@ body {
   background-color: var(--mint-dark);
   background-image: linear-gradient(135deg, var(--mint-dark) 0%, var(--mint-secondary) 100%);
   color: white;
-  min-height: 52vh;
+  min-height: 47vh;
   position: relative;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .service_section {
-  padding: 80px 0;
+  padding: 40px 0;
   background-color: var(--neutral-light);
 }
 
@@ -244,7 +244,7 @@ body {
 
 .carousel .controls {
   position: absolute;
-  bottom: 15px;
+  bottom: 8px;
   left: 0;
   right: 0;
   display: flex;
@@ -255,7 +255,7 @@ body {
 .carousel .dot {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(177, 177, 177, 0.6);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -701,3 +701,34 @@ body {
   color: var(--construction-orange);
 }
 
+.tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edu-qld-beginner-d {
+  font-family: "Edu QLD Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-jp-d {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-dk-loopet-d {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
