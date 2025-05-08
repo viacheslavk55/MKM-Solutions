@@ -41,7 +41,10 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- fonts style -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
@@ -126,7 +129,9 @@
         </div>
       </header>
       <!-- end header section -->
-
+      <button id="backToTop" title="Back to top">
+        <i class="arrow-up"></i>
+      </button>
       <!-- slider section -->
       <section class="slider_section position-relative">
         <div class="container">
@@ -212,70 +217,28 @@
     </section>
     <!-- end services section -->
     <!-- testimonial section -->
-    <section class="testimonial_section layout_padding">
-      <div class="container">
-        <div class="heading_container">
-          <h1 class="tagesschrift-regular">CUSTOMER TESTIMONIALS</h1>
-          <p class="noto-sans-jp-d">
-            Don't just take our word for it - here's what our satisfied
-            customers have to say
-          </p>
-        </div>
-        <div class="carousel-wrap">
-          <div class="owl-carousel">
-            <div class="item">
-              <div class="testimonial_box">
-                <img src="/api/placeholder/40/40" alt="Quote" class="quote" />
-                <div class="img-box">
-                  <img src="/api/placeholder/80/80" alt="Client 1" />
-                </div>
-                <h5>Jennifer M.</h5>
-                <span>Bathroom Renovation</span>
-                <p>
-                  "Mint Tile did an amazing job with our master bathroom
-                  renovation. The tile work is absolutely beautiful and their
-                  attention to detail is impressive. They were professional,
-                  clean, and completed the job on schedule."
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial_box">
-                <img src="/api/placeholder/40/40" alt="Quote" class="quote" />
-                <div class="img-box">
-                  <img src="/api/placeholder/80/80" alt="Client 2" />
-                </div>
-                <h5>Robert T.</h5>
-                <span>Kitchen Remodel</span>
-                <p>
-                  "We hired Mint Tile for our kitchen backsplash and couldn't be
-                  happier with the results. Their team was knowledgeable,
-                  efficient, and the quality of work exceeded our expectations.
-                  Would highly recommend!"
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial_box">
-                <img src="/api/placeholder/40/40" alt="Quote" class="quote" />
-                <div class="img-box">
-                  <img src="/api/placeholder/80/80" alt="Client 3" />
-                </div>
-                <h5>Sarah L.</h5>
-                <span>Floor Installation</span>
-                <p>
-                  "Mint Tile installed porcelain tile throughout our first floor
-                  and did a fantastic job. They were reliable, hardworking, and
-                  the finished product looks amazing. We'll definitely use them
-                  for future projects."
-                </p>
-              </div>
-            </div>
+<section class="testimonial_section layout_padding" id="reviews">
+  <div class="container">
+    <div class="heading_container">
+      <h1 class="tagesschrift-regular">CUSTOMER TESTIMONIALS</h1>
+      <p class="noto-sans-jp-d">
+        Don't just take our word for it - here's what our satisfied
+        customers have to say
+      </p>
+    </div>
+    <div class="carousel-wrap">
+      <div class="owl-carousel">
+        <!-- Testimonials will be dynamically loaded here by the JavaScript -->
+        <div class="item loading-placeholder">
+          <div class="testimonial_box">
+            <p>Loading testimonials...</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end testimonial section -->
+    </div>
+  </div>
+</section>
+<!-- end testimonial section -->
 
     <!-- about section -->
     <section class="about_section layout_padding" id="about">
@@ -511,6 +474,7 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script src="testimonial-loader.js"></script>
     <script src="script.js"></script>
     <script src="vue.js"></script>
   </body>

@@ -24,29 +24,29 @@ document.addEventListener('DOMContentLoaded', function() {
   // Update current year in footer
 document.getElementById('displayYear').textContent = new Date().getFullYear();
 
-// Initialize testimonial carousel
-$(document).ready(function() {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      }
+var backToTopButton = document.getElementById("backToTop");
+  
+  // When the user scrolls down 300px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
     }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  backToTopButton.addEventListener("click", function() {
+    // For a smooth scroll behavior
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
-});
 
+  
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
