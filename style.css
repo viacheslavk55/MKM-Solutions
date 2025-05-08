@@ -464,6 +464,9 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   margin: 15px;
   position: relative;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial_box .quote {
@@ -502,12 +505,40 @@ body {
   display: block;
 }
 
+.testimonial_box .testimonial-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px;
+}
+
 .testimonial_box p {
   color: #6c757d;
   font-size: 0.95rem;
   font-style: italic;
+  margin: 0;
 }
 
+/* Custom scrollbar styling */
+.testimonial_box .testimonial-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.testimonial_box .testimonial-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.testimonial_box .testimonial-content::-webkit-scrollbar-thumb {
+  background: var(--mint-primary);
+  border-radius: 10px;
+}
+
+.testimonial_box .testimonial-content::-webkit-scrollbar-thumb:hover {
+  background: var(--mint-dark);
+}
+.checked {
+  color: orange;
+}
 .stats_section {
   padding: 60px 0;
   background-color: var(--mint-dark);
@@ -528,7 +559,6 @@ body {
 .stats_box h5 {
   color: white;
 }
-
 .contact_section {
   padding: 80px 0;
   background-color: var(--neutral-light);

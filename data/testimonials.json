@@ -2,51 +2,51 @@
     "testimonials": [
       {
         "id": 1,
-        "name": "Jennifer M.",
-        "project": "Bathroom Renovation",
-        "testimonial": "Mint Tile did an amazing job with our master bathroom renovation. The tile work is absolutely beautiful and their attention to detail is impressive. They were professional, clean, and completed the job on schedule.",
-        "image": "/images/clients/client1.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "Jason J.",
+        "project": "Kitchen Backlash",
+        "testimonial": "Mike and Vito tiled the backsplash in my kitchen. They did a phenomenal job and you could tell that they are very hard workers. I had a great experience with them.",
+        "image": "images/icons/JJ.webp",
+        "date": "Sep 9, 2024"
       },
       {
         "id": 2,
-        "name": "Robert T.",
-        "project": "Kitchen Remodel",
-        "testimonial": "We hired Mint Tile for our kitchen backsplash and couldn't be happier with the results. Their team was knowledgeable, efficient, and the quality of work exceeded our expectations. Would highly recommend!",
-        "image": "/images/clients/client2.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "Joe B.",
+        "project": "Kitchen Floor Restoration",
+        "testimonial": "Amazing job done regrouting the entire first floor of our house. Was super neat, on time and on budget.",
+        "image": "images/icons/JB.webp",
+        "date": "Apr 11, 2024"
       },
       {
         "id": 3,
-        "name": "Sarah L.",
-        "project": "Floor Installation",
-        "testimonial": "Mint Tile installed porcelain tile throughout our first floor and did a fantastic job. They were reliable, hardworking, and the finished product looks amazing. We'll definitely use them for future projects.",
-        "image": "/images/clients/client3.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "Shankar K.",
+        "project": "Kitchen Wall Restoration",
+        "testimonial": "Awesome work. I needed a few key tiles replaced on the wall. Clean job. No one can tell that some work was done.",
+        "image": "images/icons/SK.webp",
+        "date": "Jun 28, 2023"
       },
       {
         "id": 4,
-        "name": "Michael D.",
-        "project": "Shower Renovation",
-        "testimonial": "The team at Mint Tile transformed our outdated shower into a modern masterpiece. Their craftsmanship is exceptional and they were a pleasure to work with throughout the entire process.",
-        "image": "/images/clients/client4.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "Coral W.",
+        "project": "Bathroom Renovation",
+        "testimonial": "Working with Vito and Michael was truly a dream considering the typical nightmare experiences customers have with contractors. We finally met contractors who were trustworthy, fairly priced and collaborative. Additionally, they were meticulous and clean with their work. We would hire Vito and Michael 10 times over for any tiling job we have moving forward. You will be just as pleased with their work, guaranteed!",
+        "image": "images/icons/CW.webp",
+        "date": "Jun 2, 2023"
       },
       {
         "id": 5,
-        "name": "Lisa W.",
-        "project": "Outdoor Patio",
-        "testimonial": "We couldn't be happier with our new outdoor patio tiles. Mint Tile helped us select the perfect weather-resistant option and installed everything flawlessly. Our outdoor space is now our favorite part of the home!",
-        "image": "/images/clients/client5.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "Okan Y.",
+        "project": "Floor Renovation",
+        "testimonial": "My original floor was completely unleveled. Vito and team were able to level it with mud. Tile install and molding throughout room came out amazing. I highly recommend this company. From start to finish it was a great experience.",
+        "image": "images/icons/OY.webp",
+        "date": "May 4, 2023"
       },
       {
         "id": 6,
-        "name": "David K.",
-        "project": "Commercial Installation",
-        "testimonial": "As a business owner, I needed tile work that could withstand heavy foot traffic while looking professional. Mint Tile delivered exactly what I needed, on time and within budget. Their commercial expertise is impressive.",
-        "image": "/images/clients/client6.jpg",
-        "quoteIcon": "/images/icons/quote.png"
+        "name": "John T.",
+        "project": "Floor Tiles",
+        "testimonial": "Vito and team are amazing! I’m super happy with the work they did in my living room, dining room and the stairs. I highly recommend them. Vito is very professional and super responsive. Look no further if you have any tile or flooring work. I’ll definitely be calling Vito and team for my future projects.",
+        "image": "images/icons/JT.webp",
+        "date": "Dec 14, 2022"
       }
     ],
     "stats": [
