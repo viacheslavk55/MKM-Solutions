@@ -22,12 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
       const testimonialHTML = `
         <div class="item">
           <div class="testimonial_box">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <div class="img-box">
-              <img src="${testimonial.image}" alt="${testimonial.name}" />
-            </div>
+            <span>
+              <div class="img-box">
+                <img src="${testimonial.image}" alt="${testimonial.name}" />
+              </div>
+              <span>
+                <div class="fa fa-star checked"></div>
+                <div class="fa fa-star checked"></div>
+                <div class="fa fa-star checked"></div>
+                <div class="fa fa-star checked"></div>
+                <div class="fa fa-star checked"></div>
+              </span>
+            </span>
             <h5>${testimonial.name}</h5>   
             <span>${testimonial.project}</span>
             <div class="testimonial-content">
