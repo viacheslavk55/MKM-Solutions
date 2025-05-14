@@ -805,3 +805,60 @@ body {
   font-weight: 200;
   font-style: normal;
 }
+/* Custom CSS for Owl Carousel Navigation Arrows */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 20px;
+}
+
+.owl-prev, .owl-next {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px !important;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.owl-prev span, .owl-next span {
+  display: block;
+  line-height: 0;
+  position: relative;
+  top: -2px;
+}
+
+/* Add these arrow characters to make them more visible */
+.owl-prev span:after {
+  content: "‹";
+}
+
+.owl-next span:after {
+  content: "›";
+}
+
+/* Hide the default text */
+.owl-prev span, .owl-next span {
+  font-size: 30px;
+}
+
+/* Make sure the nav doesn't disappear on mobile */
+@media (max-width: 768px) {
+  .owl-nav {
+    padding: 0 10px;
+  }
+}

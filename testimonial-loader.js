@@ -48,25 +48,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  function initializeCarousel() {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    });
-  }
+  
+function initializeCarousel() {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    navText: ['<span></span>', '<span></span>'],  // Custom HTML for nav arrows
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+}
