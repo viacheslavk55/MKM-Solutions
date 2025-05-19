@@ -339,48 +339,54 @@
     <!-- end portfolio section -->
 
     <!-- contact section -->
-    <section class="contact_section layout_padding" id="contact">
-      <div class="container">
-        <div class="heading_container">
-          <h1 class="tagesschrift-regular">Request a Free Estimate</h1>
-          <p class="noto-sans-jp-d">
-            Fill out the form below and we'll get back to you within 24 hours
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-9 mx-auto">
-            <div class="contact-form">
-              <form action="">
-                <div>
-                  <input type="text" placeholder="Full Name" />
-                </div>
-                <div>
-                  <input type="text" placeholder="Phone Number" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email Address" />
-                </div>
-                <div>
-                  <input type="text" placeholder="Service Needed" />
-                </div>
-                <div>
-                  <textarea
-                    rows="4"
-                    placeholder="Tell us about your project"
-                  ></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">
-                    Submit Request
-                  </button>
-                </div>
-              </form>
+<section class="contact_section layout_padding" id="contact">
+  <div class="container">
+    <div class="heading_container">
+      <h1 class="tagesschrift-regular">Request a Free Estimate</h1>
+      <p class="noto-sans-jp-d">
+        Fill out the form below and we'll get back to you within 24 hours
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-9 mx-auto">
+        <div class="contact-form">
+          <form id="estimateForm" action="mailto:525vkostenko@frhsd.com" method="POST" enctype="text/plain" novalidate>
+            <div class="form-group mb-3">
+              <label for="fullName" class="visually-hidden">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Full Name" required aria-required="true" class="form-control" />
+              <div class="invalid-feedback">Please enter your full name</div>
             </div>
-          </div>
+            <div class="form-group mb-3">
+              <label for="phoneNumber" class="visually-hidden">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required aria-required="true" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+              <div class="invalid-feedback">Please enter a valid phone number</div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="emailAddress" class="visually-hidden">Email Address</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required aria-required="true" class="form-control" />
+              <div class="invalid-feedback">Please enter a valid email address</div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="serviceNeeded" class="visually-hidden">Service Needed</label>
+              <input type="text" id="serviceNeeded" name="serviceNeeded" placeholder="Service Needed" required aria-required="true" class="form-control" />
+              <div class="invalid-feedback">Please specify the service you need</div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="projectDetails" class="visually-hidden">Project Details</label>
+              <textarea id="projectDetails" name="projectDetails" rows="4" placeholder="Tell us about your project" class="form-control"></textarea>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <button type="submit" class="btn btn-primary" aria-label="Submit estimate request">
+                Submit Request
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    <!-- end contact section -->
+    </div>
+  </div>
+</section>
+<!-- end contact section -->
     <!-- info section -->
     <section class="info_section">
       <div class="container">

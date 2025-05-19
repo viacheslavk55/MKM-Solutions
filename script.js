@@ -124,3 +124,24 @@ if (contactForm) {
     }
   });
 }
+
+// Form validation script
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('estimateForm');
+  
+  form.addEventListener('submit', function(event) {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    
+    form.classList.add('was-validated');
+  });
+  
+  // Optional: Format phone number as user types
+  const phoneInput = document.getElementById('phoneNumber');
+  phoneInput.addEventListener('input', function(e) {
+    const x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2] ? x[1] : x[1] + '-' + x[2] + (x[3] ? '-' + x[3] : '');
+  });
+});
